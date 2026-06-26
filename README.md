@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>まいの取扱説明書</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            background-color: #fdfafb; /* ほんのり桜がかった上品な白 */
+            background-color: #fdfafb;
             color: #4a4a4a;
             margin: 0;
             padding: 0;
@@ -20,104 +24,117 @@
         /* 項目が浮かぶエリア */
         .bubble-container {
             width: 100%;
-            max-width: 800px;
-            height: 480px;
+            height: auto;
             margin: 0 auto;
             position: relative;
             background: radial-gradient(circle at 50% 50%, #ffffff, #fdfafb);
-            padding-top: 40px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
         .title-main {
             text-align: center;
-            font-size: 24px;
+            font-size: clamp(20px, 5vw, 28px);
             color: #5a5a5a;
             letter-spacing: 2px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-weight: bold;
+            width: 100%;
+        }
+
+        /* バブルグリッドコンテナ */
+        .bubble-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 10px;
         }
 
         /* 浮かぶ丸ボタンの共通スタイル */
         .bubble-item {
-            position: absolute;
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-size: 14px;
+            font-size: clamp(12px, 3vw, 14px);
             font-weight: bold;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
             text-align: center;
+            position: relative;
+            min-height: 100px;
         }
 
         /* ホバー（タップ）したときの動き */
-        .bubble-item:hover {
-            transform: scale(1.08);
+        .bubble-item:hover,
+        .bubble-item:active {
+            transform: scale(1.1);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
         }
 
         .bubble-item span {
-            margin-top: 4px;
+            display: block;
+            line-height: 1.2;
         }
 
-        /* 各バブルの配置と色（まじめトーンのパステルカラー） */
+        .bubble-item span:first-child {
+            font-size: clamp(24px, 6vw, 32px);
+            margin-bottom: 4px;
+        }
+
+        /* 各バブルの色（まじめトーンのパステルカラー） */
         .b-profile {
-            background-color: #fff0f2; /* 薄ピンク */
+            background-color: #fff0f2;
             color: #e07a8c;
-            top: 110px;
-            left: 12%;
         }
         .b-partner {
-            background-color: #f0f7ff; /* 薄青 */
+            background-color: #f0f7ff;
             color: #6ba4e8;
-            top: 90px;
-            left: 42%;
         }
         .b-happy {
-            background-color: #fff9e6; /* 薄黄 */
+            background-color: #fff9e6;
             color: #e6a817;
-            top: 130px;
-            right: 12%;
         }
         .b-kaeru {
-            background-color: #f3f0ff; /* 薄紫 */
+            background-color: #f3f0ff;
             color: #9a7bee;
-            top: 270px;
-            left: 25%;
         }
         .b-action {
-            background-color: #f0fdf4; /* 薄緑 */
+            background-color: #f0fdf4;
             color: #52b774;
-            top: 290px;
-            right: 28%;
         }
 
         /* 説明文のコンテンツエリア */
         .content-container {
-            max-width: 650px;
-            margin: 0 auto 100px auto;
-            padding: 0 20px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 15px 40px 15px;
         }
 
         .section-card {
             background: #ffffff;
-            border-radius: 16px;
-            padding: 30px 25px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            border-radius: 12px;
+            padding: 20px 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
             border: 1px solid #f5efef;
-            scroll-margin-top: 30px; /* スクロールした時に上に少し余白を作る設定 */
+            scroll-margin-top: 20px;
         }
 
         .section-card h2 {
-            font-size: 18px;
-            margin-top: 0;
+            font-size: clamp(16px, 4vw, 18px);
+            margin: 0 0 15px 0;
             padding-bottom: 10px;
             border-bottom: 2px solid #fdf4f5;
         }
@@ -130,14 +147,15 @@
         .section-card.p-action h2 { color: #52b774; border-bottom-color: #f0fdf4; }
 
         ul {
-            padding-left: 20px;
-            margin: 15px 0 0 0;
+            padding-left: 18px;
+            margin: 10px 0 0 0;
         }
 
         li {
-            margin-bottom: 12px;
-            font-size: 14.5px;
+            margin-bottom: 10px;
+            font-size: clamp(13px, 3.5vw, 14.5px);
             color: #555555;
+            line-height: 1.6;
         }
 
         strong {
@@ -152,9 +170,68 @@
 
         .footer {
             text-align: center;
-            font-size: 11px;
+            font-size: clamp(10px, 2.5vw, 11px);
             color: #bbb;
-            margin-top: 60px;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        /* タブレット以上の画面用 */
+        @media (min-width: 768px) {
+            .bubble-container {
+                max-width: 800px;
+                height: 480px;
+                padding-top: 40px;
+            }
+
+            .bubble-grid {
+                display: contents;
+            }
+
+            .bubble-item {
+                position: absolute;
+                width: 110px;
+                height: 110px;
+            }
+
+            .b-profile {
+                top: 110px;
+                left: 12%;
+            }
+            .b-partner {
+                top: 90px;
+                left: 42%;
+            }
+            .b-happy {
+                top: 130px;
+                right: 12%;
+            }
+            .b-kaeru {
+                top: 270px;
+                left: 25%;
+            }
+            .b-action {
+                top: 290px;
+                right: 28%;
+            }
+
+            .content-container {
+                max-width: 650px;
+                padding: 0 20px 100px 20px;
+            }
+
+            .section-card {
+                padding: 30px 25px;
+                margin-bottom: 40px;
+            }
+
+            .section-card h2 {
+                font-size: 18px;
+            }
+
+            li {
+                font-size: 14.5px;
+            }
         }
     </style>
 </head>
@@ -163,26 +240,28 @@
     <div class="bubble-container">
         <div class="title-main">まいの取扱説明書</div>
         
-        <a href="#profile" class="bubble-item b-profile">
-            <span>🌸</span>
-            <span>基本情報</span>
-        </a>
-        <a href="#partner" class="bubble-item b-partner">
-            <span>🧍‍♂️</span>
-            <span>ときめき</span>
-        </a>
-        <a href="#happy" class="bubble-item b-happy">
-            <span>🍈</span>
-            <span>うれしいこと</span>
-        </a>
-        <a href="#kaeru" class="bubble-item b-kaeru">
-            <span>⚠️</span>
-            <span>蛙化しちゃうポイント</span>
-        </a>
-        <a href="#action" class="bubble-item b-action">
-            <span>📢</span>
-            <span>怒りポイント</span>
-        </a>
+        <div class="bubble-grid">
+            <a href="#profile" class="bubble-item b-profile">
+                <span>🌸</span>
+                <span>基本情報</span>
+            </a>
+            <a href="#partner" class="bubble-item b-partner">
+                <span>🧍‍♂️</span>
+                <span>ときめき</span>
+            </a>
+            <a href="#happy" class="bubble-item b-happy">
+                <span>🍈</span>
+                <span>うれしいこと</span>
+            </a>
+            <a href="#kaeru" class="bubble-item b-kaeru">
+                <span>⚠️</span>
+                <span>蛙化しちゃうポイント</span>
+            </a>
+            <a href="#action" class="bubble-item b-action">
+                <span>📢</span>
+                <span>怒りポイント</span>
+            </a>
+        </div>
     </div>
 
     <div class="content-container">
@@ -226,7 +305,7 @@
         <div id="action" class="section-card p-action">
             <h2>📢 5.怒りポイント</h2>
             <ul>
-                <li><strong>怒ったときの反応</strong>：不満があるとぷんぷん文句を言います。これは嫌いになったわけではなく、好きだからこそ真面目に向き合いたいサインです。</li>
+                <li><strong>怒ったときの反応</strong>：不満があるとぷんぷん文句を言います。これは嫌いになったわけではなく、好きだからこそ真面目に向き合っている証です。</li>
                 <li><strong>不機嫌時の対処</strong>：放置されると不安が強まります。話を優しく聴く、あるいは上記の「お姫様抱っこ」を実行して安心させてください。</li>
             </ul>
         </div>
