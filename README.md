@@ -246,7 +246,7 @@
                 <span>基本情報</span>
             </a>
             <a href="#partner" class="bubble-item b-partner">
-                <span>🧍‍♂️</span>
+                <span>🍳</span>
                 <span>得意なこと</span>
             </a>
             <a href="#happy" class="bubble-item b-happy">
@@ -259,7 +259,7 @@
             </a>
             <a href="#action" class="bubble-item b-action">
                 <span>📢</span>
-                <span>けんか</span>
+                <span>けんかしたら</span>
             </a>
         </div>
     </div>
@@ -269,16 +269,14 @@
         <div id="profile" class="section-card p-profile">
             <h2>🌸 1. 基本情報</h2>
             <ul>
-                <li><strong>性格</strong>：好きなものはとことん好きです</li>
+                <li><strong>性格</strong>：好きなものはとことん好き</li>
                 <li><strong>自己肯定感</strong>：高くも低くもない</li>
                 <li><strong>モットー</strong>：真面目にふざける</li>
-                <li><strong>強み</strong>：身内と認めた相手に対しては、非常に優しく接します</li>
-                <li><strong>弱み</strong>：生理の時期は、パートナー以外の男性全般に対して嫌悪感を抱く傾向があります</li>
             </ul>
         </div>
 
         <div id="partner" class="section-card p-partner">
-            <h2>🧍‍♂️ 2. 得意なこと</h2>
+            <h2>🍳 2. 得意なこと</h2>
             <ul>
                 <li><strong>料理</strong>：健康にします</li>
                 <li><strong>マッサージ</strong>：痛がってても手加減しません</li>
@@ -297,14 +295,14 @@
         <div id="kaeru" class="section-card p-kaeru">
             <h2>⚠️ 4. 蛙化しちゃうポイント</h2>
             <ul>
-                <li>過去に関係のあった女性と会うこと</li>
+                <li>過去に関係のあった女性に会われること</li>
                 <li>自分の保身のために嘘をつかれること</li>
                 <li>雑に扱われるなど、大切にされている実感が持てないとき</li>
             </ul>
         </div>
 
         <div id="action" class="section-card p-action">
-            <h2>📢 5.けんか</h2>
+            <h2>📢 5.けんかしたら</h2>
             <ul>
                 <li><strong>怒ったときの反応</strong>：不満があるとぷんぷん文句を言いますが、完全に嫌いになったわけではなく、好きだからこそもやもやしちゃいます</li>
                 <li><strong>不機嫌時の対処</strong>：私のためにPDCA回してください</li>
