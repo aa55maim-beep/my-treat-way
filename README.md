@@ -169,7 +169,7 @@
         </a>
         <a href="#partner" class="bubble-item b-partner">
             <span>🧍‍♂️</span>
-            <span>理想の相手</span>
+            <span>ときめき</span>
         </a>
         <a href="#happy" class="bubble-item b-happy">
             <span>🍈</span>
@@ -190,15 +190,16 @@
         <div id="profile" class="section-card p-profile">
             <h2>🌸 1. 基本情報</h2>
             <ul>
-                <li><strong>モットー</strong>：真面目にふざける。</li>
-                <li><strong>自己肯定感</strong>：高くも低くもなく、標準的。</li>
-                <li><strong>強み</strong>：身内と認めた相手に対しては、非常に優しく接します。</li>
-                <li><strong>弱み</strong>：生理の時期は、パートナー以外の男性全般に対してうっすらと嫌悪感を抱く傾向があります。</li>
+                <li><strong>性格</strong>：好きなものはとことん好きです</li>
+                <li><strong>自己肯定感</strong>：高くも低くもない</li>
+                <li><strong>モットー</strong>：真面目にふざける</li>
+                <li><strong>強み</strong>：身内と認めた相手に対しては、非常に優しく接します</li>
+                <li><strong>弱み</strong>：生理の時期は、パートナー以外の男性全般に対して嫌悪感を抱く傾向があります</li>
             </ul>
         </div>
 
         <div id="partner" class="section-card p-partner">
-            <h2>🧍‍♂️ 2. 理想のパートナー像</h2>
+            <h2>🧍‍♂️ 2. ときめき</h2>
             <ul>
                 <li><strong>必須条件</strong>：優しくてかわいくてかっこいいひと。</li>
                 <li><strong>体型</strong>：自分より大きいひと。</li>
