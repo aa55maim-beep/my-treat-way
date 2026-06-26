@@ -165,7 +165,7 @@
         
         <a href="#profile" class="bubble-item b-profile">
             <span>🌸</span>
-            <span>自己認識</span>
+            <span>基本情報</span>
         </a>
         <a href="#partner" class="bubble-item b-partner">
             <span>🧍‍♂️</span>
@@ -177,55 +177,55 @@
         </a>
         <a href="#kaeru" class="bubble-item b-kaeru">
             <span>⚠️</span>
-            <span>蛙化トリガー</span>
+            <span>蛙化しちゃうポイント</span>
         </a>
         <a href="#action" class="bubble-item b-action">
             <span>📢</span>
-            <span>感情と対処</span>
+            <span>怒りポイント</span>
         </a>
     </div>
 
     <div class="content-container">
 
         <div id="profile" class="section-card p-profile">
-            <h2>🌸 1. 基本的な性質と自己認識</h2>
+            <h2>🌸 1. 基本情報</h2>
             <ul>
-                <li><strong>性格</strong>：基本的には真面目ですが、寂しがり屋で少しメンヘラな一面を持ち合わせています。</li>
-                <li><strong>自己肯定感</strong>：高くも低くもなく、標準的です。</li>
+                <li><strong>モットー</strong>：真面目にふざける。</li>
+                <li><strong>自己肯定感</strong>：高くも低くもなく、標準的。</li>
                 <li><strong>強み</strong>：身内と認めた相手に対しては、非常に優しく接します。</li>
-                <li><strong>弱み</strong>：生理の周期において、一時的にパートナー以外の男性全般に対してうっすらと嫌悪感を抱く傾向があります。この期間の体調と心情への理解が必要です。</li>
+                <li><strong>弱み</strong>：生理の時期は、パートナー以外の男性全般に対してうっすらと嫌悪感を抱く傾向があります。</li>
             </ul>
         </div>
 
         <div id="partner" class="section-card p-partner">
             <h2>🧍‍♂️ 2. 理想のパートナー像</h2>
             <ul>
-                <li><strong>必須条件</strong>：優しいこと。また、自分自身に一貫性がないと感じているため、ブレない一貫性を持っている人に安心感を覚えます。</li>
-                <li><strong>体型</strong>：体重<strong>78kg前後</strong>で、お姫様抱っこができる体格を好みます。</li>
+                <li><strong>必須条件</strong>：優しくてかわいくてかっこいいひと。</li>
+                <li><strong>体型</strong>：自分より大きいひと。</li>
             </ul>
         </div>
 
         <div id="happy" class="section-card p-happy">
             <h2>🍈 3. されるとうれしいこと</h2>
             <ul>
-                <li><strong>お姫様抱っこ</strong>：日常的なスキンシップや、安心感を得たいときにされると非常に喜びます。</li>
-                <li><strong>メロンを食べさせてもらう</strong>：ただ食べるだけでなく、「食べさせてもらう」という甘えられるシチュエーションに幸福感を覚えます。</li>
+                <li><strong>お姫様抱っこ</strong>：非常に喜びます。</li>
+                <li><strong>メロンを食べさせてもらう</strong>：メロンにめろめろです。</li>
             </ul>
         </div>
 
         <div id="kaeru" class="section-card p-kaeru">
-            <h2>⚠️ 4. 蛙化（気持ちが冷める）のトリガー</h2>
+            <h2>⚠️ 4. 蛙化しちゃうポイント</h2>
             <ul>
-                <li>過去に関係のあった女性（元カノなど）と会うこと</li>
-                <li>自分の保身のために嘘をつくこと</li>
+                <li>過去に関係のあった女性と会うこと</li>
+                <li>自分の保身のために嘘をつかれること</li>
                 <li>雑に扱われるなど、大切にされている実感が持てないとき</li>
             </ul>
         </div>
 
         <div id="action" class="section-card p-action">
-            <h2>📢 5. 感情表現と対処法</h2>
+            <h2>📢 5.怒りポイント</h2>
             <ul>
-                <li><strong>怒ったときの反応</strong>：不満があると「ぷんぷん」と文句を言います。これは嫌いになったわけではなく、「好きだからこそ」出る真面目に向き合いたいサインです。</li>
+                <li><strong>怒ったときの反応</strong>：不満があるとぷんぷん文句を言います。これは嫌いになったわけではなく、好きだからこそ真面目に向き合いたいサインです。</li>
                 <li><strong>不機嫌時の対処</strong>：放置されると不安が強まります。話を優しく聴く、あるいは上記の「お姫様抱っこ」を実行して安心させてください。</li>
             </ul>
         </div>
