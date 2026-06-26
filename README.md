@@ -247,11 +247,11 @@
             </a>
             <a href="#partner" class="bubble-item b-partner">
                 <span>🧍‍♂️</span>
-                <span>ときめき</span>
+                <span>得意なこと</span>
             </a>
             <a href="#happy" class="bubble-item b-happy">
                 <span>🍈</span>
-                <span>うれしいこと</span>
+                <span>されると嬉しいこと</span>
             </a>
             <a href="#kaeru" class="bubble-item b-kaeru">
                 <span>⚠️</span>
@@ -259,7 +259,7 @@
             </a>
             <a href="#action" class="bubble-item b-action">
                 <span>📢</span>
-                <span>怒りポイント</span>
+                <span>けんか</span>
             </a>
         </div>
     </div>
@@ -278,18 +278,19 @@
         </div>
 
         <div id="partner" class="section-card p-partner">
-            <h2>🧍‍♂️ 2. ときめき</h2>
+            <h2>🧍‍♂️ 2. 得意なこと</h2>
             <ul>
-                <li><strong>必須条件</strong>：優しくてかわいくてかっこいいひと。</li>
-                <li><strong>体型</strong>：自分より大きいひと。</li>
+                <li><strong>料理</strong>：健康にします</li>
+                <li><strong>マッサージ</strong>：痛がってても手加減しません</li>
+                <li><strong>悩みを聞く</strong>：いろいろ聞きます</li>
             </ul>
         </div>
 
         <div id="happy" class="section-card p-happy">
             <h2>🍈 3. されるとうれしいこと</h2>
             <ul>
-                <li><strong>お姫様抱っこ</strong>：非常に喜びます。</li>
-                <li><strong>メロンを食べさせてもらう</strong>：メロンにめろめろです。</li>
+                <li><strong>誘ってもらうこと</strong>：電話とかデートとか、提案してもらえると非常に喜びます</li>
+                <li><strong>メロンを食べさせてもらう</strong>：メロンにめろめろです</li>
             </ul>
         </div>
 
@@ -303,10 +304,10 @@
         </div>
 
         <div id="action" class="section-card p-action">
-            <h2>📢 5.怒りポイント</h2>
+            <h2>📢 5.けんか</h2>
             <ul>
-                <li><strong>怒ったときの反応</strong>：不満があるとぷんぷん文句を言います。これは嫌いになったわけではなく、好きだからこそ真面目に向き合っている証です。</li>
-                <li><strong>不機嫌時の対処</strong>：放置されると不安が強まります。話を優しく聴く、あるいは上記の「お姫様抱っこ」を実行して安心させてください。</li>
+                <li><strong>怒ったときの反応</strong>：不満があるとぷんぷん文句を言いますが、完全に嫌いになったわけではなく、好きだからこそもやもやしちゃいます</li>
+                <li><strong>不機嫌時の対処</strong>：私のためにPDCA回してください</li>
             </ul>
         </div>
 
