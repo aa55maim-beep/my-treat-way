@@ -1,15 +1,4 @@
-# my-treat-way
-取り扱い説明書
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>まいの取扱説明書</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+# 取り扱い説明書
 
         body {
             font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
@@ -287,7 +276,7 @@
         <div id="happy" class="section-card p-happy">
             <h2>🍈 3. されるとうれしいこと</h2>
             <ul>
-                <li><strong>誘ってもらうこと</strong>：電話とかデートとか、提案してもらえると非常に喜びます</li>
+                <li><strong>誘ってもらうこと</strong>：電話とかデートとか、提案してもらえると喜びます</li>
                 <li><strong>メロンを食べさせてもらう</strong>：メロンにめろめろです</li>
             </ul>
         </div>
@@ -297,20 +286,16 @@
             <ul>
                 <li>過去に関係のあった女性に会われること</li>
                 <li>自分の保身のために嘘をつかれること</li>
-                <li>雑に扱われるなど、大切にされている実感が持てないとき</li>
+                <li>雑に扱われたとき</li>
             </ul>
         </div>
 
         <div id="action" class="section-card p-action">
             <h2>📢 5.けんかしたら</h2>
             <ul>
-                <li><strong>怒ったときの反応</strong>：不満があるとぷんぷん文句を言いますが、完全に嫌いになったわけではなく、好きだからこそもやもやしちゃいます</li>
+                <li><strong>怒ったときの反応</strong>：ぷんぷん文句を言いますが、嫌いになったからじゃなくて好きだからこその行動です</li>
                 <li><strong>不機嫌時の対処</strong>：私のためにPDCA回してください</li>
             </ul>
-        </div>
-
-        <div class="footer">
-            <p>© 2026 まいの取扱説明書 All Rights Reserved.</p>
         </div>
     </div>
 
