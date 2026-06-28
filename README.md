@@ -269,7 +269,7 @@
             <ul>
                 <li><strong>料理</strong>：健康にします</li>
                 <li><strong>マッサージ</strong>：痛がってても手加減しません</li>
-                <li><strong>悩みを聞く</strong>：いろいろ聞きます</li>
+                <li><strong>悩みを聞く</strong>：いつでも聞きます</li>
             </ul>
         </div>
 
@@ -277,7 +277,7 @@
             <h2>🍈 3. されるとうれしいこと</h2>
             <ul>
                 <li><strong>誘ってもらうこと</strong>：電話とかデートとか、提案してもらえると喜びます</li>
-                <li><strong>メロンを食べさせてもらう</strong>：メロンにめろめろです</li>
+                <li><strong>メロンを食べさせてもらう</strong>：いくらでも食べれます</li>
             </ul>
         </div>
 
